@@ -58,13 +58,5 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // Add subtle parallax effect to hero section
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        window.addEventListener('scroll', () => {
-            const scrolled = window.pageYOffset;
-            const parallax = scrolled * 0.5;
-            hero.style.transform = `translateY(${parallax}px)`;
-        });
-    }
+
 });
